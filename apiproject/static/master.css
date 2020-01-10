@@ -1,0 +1,25 @@
+.list_content{
+
+}
+
+.list_main{
+  /* padding-top: 1px;
+  padding-bottom: 1px; */
+}
+
+.jumbotron {
+    padding: 1em 1em;
+    h1 {
+        font-size: 2em;
+    }
+
+.navbar{
+  padding-bottom: 10px;
+}
+
+.btn.btn-primary{
+  margin-left: auto;
+}
+.deletee{
+  padding-left: 20px;
+}

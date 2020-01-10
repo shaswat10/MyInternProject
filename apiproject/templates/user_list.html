@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+
+
+{% block content %}
+<div class="list_main">
+  <div class="container">
+    {% for user in user_list %}
+
+<ul>
+  <li><a href="{% url 'myapp:detail' pk=user.pk %}">
+    <div class="jumbotron">
+      <h4 class="list_content">{{user.name}}</h4>
+    </div>
+  </a></li>
+</ul>
+    {% endfor %}
+
+<div class="container">
+  <div class="container">
+    <div class="container">
+        <p><a type="button" class="btn btn-primary" href="{% url 'myapp:user' %}">Add</a></p>
+    </div>
+  </div>
+</div>
+
+
+  </div>
+</div>
+{% endblock %}
+
+<!-- {{user.id}} -->
+
+<!-- <div class="list_main">
+  <div class="container">
+    <div class="jumbotron">
+      <h4 class="list_content">{{user.name}}</h4>
+    </div>
+  </div>
+</div> -->

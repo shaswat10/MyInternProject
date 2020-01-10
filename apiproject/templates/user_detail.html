@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+<div class="container">
+  <div class="jumbotron">
+    <ul>
+      <li><h5>Name : {{  user_detail.name}}</h5></li>
+      <li><h5>Gender :  {{user_detail.gender}}</h5></li>
+      <li><h5>Age : {{user_detail.age}}</h5></li>
+      <li><h5>Email : {{user_detail.email}}</h5></li>
+      <li><a href="{{user_detail.image}}"><h5>Image : {{user_detail.image}}</h5></a></li>
+      <br>
+      <br>
+      <a href="{% url 'myapp:list' %}"><button type="button" class="btn btn-warning">Back</button></a>
+
+      <a href="{% url 'myapp:delete' pk=user_detail.pk %}">delete</a>
+    </ul>
+  </div>
+</div>
+
+{% endblock %}
