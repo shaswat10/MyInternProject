@@ -15,7 +15,8 @@
          {% csrf_token %}
          <p>Are you sure you want to delete "{{ delete_user.name }}"?</p>
          <input type="submit" class="btn btn-danger"  value="Delete">
-         <a href="{% url 'myapp:detail' pk=delete_user.pk %}"></a>
+         <a href="{% url 'myapp:detail' pk=delete_user.pk %}"><button type="button" class="btn btn-warning">Back</button></a>
+         
        </form>
     </div>
   </body>
